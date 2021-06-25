@@ -1,9 +1,14 @@
 # Labs 3 & 4
 
 """
-    nwscore(base1, base2)
+    nwscore(base1, base2; gap = 1, match = 1, mismatch = -1)
 
-Your documentation here.
+Determine Needleman Wunsch score for DNA sequence alignment.
+
+Examples
+≡≡≡≡≡≡≡≡≡≡
+
+    julia> nwscore('A', 'A')
 """
 function nwscore(base1::Char, base2::Char; match = 1, mismatch = -1, gap = -1)
     if base1 == base2
